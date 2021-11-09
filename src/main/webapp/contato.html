@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" src="validarCampos.js"></script>
+
+
+<head>		
+		<title>Contato</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	</head>
+
+	<body background="">
+
+		<table border="0" width="900" align="center">
+			
+			<tr>
+				<td height="25"><img src="img/Logo1.png" height="155"></td>
+				<td align="right">
+					<a href="index.html">Home</a> |
+					<a href="CadastrarLogin.jsp">Colaborador</a> |
+					<a href="login.jsp">Login(Orgãos responsáveis)</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+					<h2>Registre seu comentário</h2>
+					<p>
+						Nossos parceiros irão solucionar sua sugestão, elogio, ou reclamação da melhor maneira
+					</p>
+
+					<hr>
+					
+					
+					<form name="formLogin" action="CadastroSugestao" method="post">
+						Nome: <br>
+						<input type="text" name="txtNome"><br>
+						
+						Seu e-mail: <br>
+						<input type="text" name="txtEmail"><br>
+
+						
+						
+						Assunto: <br>
+						<select name="txtTopico">
+						<option value="saneamento">Saneamento</option>
+						<option value="estradas">Estradas</option>
+						<option value="energia">Energia Eletrica</option>
+						<option value="mobilidade">Mobilidade</option>
+						<option value="seguranca">Seguranca</option>
+						<option value="outros">Outros Assuntos</option>
+						</select><br>
+																		
+						Descrição: <br>
+						<textarea name="txtSugestao"></textarea><br>
+
+						<input type="submit" value="Enviar" onClick="validarLogin()">
+					</form>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center">
+					<h4>Todos os direitos reservados</h4>
+				</td>
+			</tr>
+
+		</table>
+
+	</body>
+</html>

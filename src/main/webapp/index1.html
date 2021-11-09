@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Know How Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="textContent">
+                <div class="hero-header">
+                    <div class="itemLogo">
+                        <img src="https://cdn.es.gov.br/images/logo/governo/brasao/right/Brasao_Governo_320.png" alt="logo" class="image">
+                    </div>
+                </div>
+                <div class="hero-header">
+                    
+                </div>
+                <h1 class="heroTitle">Know How <span class="hero__emphasizing">Technologies</span></h1>
+                <div class="hero-content">
+
+                    
+                    <ul class="heroList">
+                        <li><b> Solução do desafio 01:</b> </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>Desenvolvimento de uma base de conhecimento contendo
+                             informações de mobilidade urbana.
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>Logo será possível ver em nosso mapa, locais com problemas e também se 
+                            as medidas estão sendo tomadas para solucionar o problema.
+                            
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-outline"></ion-icon>O cidadão tem sempre o direito de enviar suas dúvidas e ou sugestões.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="buttonWrapper">
+                    <a href="./login.jsp" class="btn btn-success mr-4" target="_blank">
+                    
+                        Login
+                    </a>
+
+                    <a href="./CadastrarLogin.jsp" class="btn btn-secondary" id="hero-qr-button" target="_blank">
+                      
+                        Registrar
+                    </a>
+
+                </div>
+                
+            </div>
+
+            
+
+            <!-- mobile -->
+            <div class="phoneContent">
+                <div class="phoneWrapper">
+                    <div class="in">
+                        <iframe class="getFrame" src="./index.html" scrolling="no" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobileDetected">
+                <div class="in">
+                    <div><img src="img/logo.png" alt="logo" class="logo"></div>
+                    <h3 style="font-weight: bold; color: #1F1212;">Solução desenvolvida pela Know How Technologies</h3>
+                    Clique no botão abaixo e confira a solução desenvolvida pelo grupo durante o Hackathon Cibercidadão.
+                    <div class="mt-5 p-4">
+                        <div class="row">
+
+                            <div id="chatbot" class="main-card collapsed">
+                                <button id="chatbot_toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        style="display:none">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                                    </svg>
+                                    </svg>
+                                </button>
+                                <div class="main-title">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                        </svg>
+                                    </div>
+                                    <span>Know How Technologies</span>
+                                </div>
+                                <h2 class="ajuda">Busque ajuda:</h2>
+                                <input aria-label="Pesquisar" placeholder="Pesquisar dúvidas..." class="busca" value="">
+                                <div class="chat-area" id="message-box">
+                                </div>
+                                <div class="line"></div>
+                                <div class="input-div">
+                                    <input class="input-message" name="message" type="text" id="message"
+                                        placeholder="Escreva aqui a sua dúvida..." />
+                                    <button class="input-send" onclick="send()">
+                                        <svg style="width:24px;height:24px">
+                                            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- mobile -->
+
+                            <!-- Scripts -->
+                            <script src="js/lib/jquery-3.4.1.min.js"></script>
+                            <script src="https://bragherstudio.com/data/data.js"></script>
+                            <script src="js/app.js"></script>
+                            <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
