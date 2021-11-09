@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>UrbES</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<link rel="stylesheet"
+	href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin="" />
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin="">
+	
+</script>
+
+<style>
+	#mapid{
+		height: 500px;
+		width: 850px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="hero">
+		<div class="container">
+			<div class="textContent">
+				<div class="hero-header">
+					<div class="itemLogo">
+						<img
+							src="https://cdn.es.gov.br/images/logo/governo/brasao/right/Brasao_Governo_320.png"
+							alt="logo" class="image">
+					</div>
+				</div>
+				<div class="hero-header"></div>
+				<h1 class="heroTitle">
+					Urb <span class="hero__emphasizing">ES</span>
+				</h1>
+				<div class="hero-content">
+
+
+					<ul class="heroList">
+						<li><b> Solução do desafio 05:</b></li>
+						<li><ion-icon name="checkmark-outline"></ion-icon>Desenvolvimento
+							de uma base de conhecimento contendo informações de mobilidade
+							urbana.</li>
+						<li><ion-icon name="checkmark-outline"></ion-icon>Logo será
+							possível ver em nosso mapa, locais com problemas e também se as
+							medidas estão sendo tomadas para solucionar o problema.</li>
+						<li><ion-icon name="checkmark-outline"></ion-icon>O cidadão
+							tem sempre o direito de enviar suas dúvidas e ou sugestões.</li>
+					</ul>
+				</div>
+
+				<div class="buttonWrapper">
+					<a href="./login.jsp" class="btn btn-success mr-4" target="_blank">
+
+						Login </a> <a href="./CadastrarLogin.jsp" class="btn btn-secondary"
+						id="hero-qr-button" target="_blank"> Registrar </a>
+
+				</div>
+
+			</div>
+
+
+			<div id="mapid"></div>
+
+			<script src="scriptMapa.js"></script>
+			
+			
+			
+</body>
+
+</html>
